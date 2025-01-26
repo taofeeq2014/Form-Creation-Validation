@@ -53,3 +53,10 @@ const form = document.getElementById('registration-form');
       // If all validations pass, submit the form
       form.submit();
     });
+
+//Feedback Display Logic:
+feedbackDiv  style.display to "block"
+If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" 
+style.color to "#28a745".
+If isValid is false, join messages with <br> to form a single string, and assign this to the 
+  innerHTML of feedbackDiv. Set feedbackDiv.style.color to "#dc3545".
