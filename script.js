@@ -64,8 +64,9 @@ const form-feedback = document.getElementById('form-feedback');
         else {
         form-feedbackError.textContent = '';
       }
+const trim = document.getElementById('trim');
 
-feedbackDiv  style.display to "block"
+'feedbackDiv'  style.display to "block"
 If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" 
 style.color to "#28a745".
 If isValid is false, join messages with <br> to form a single string, and assign this to the 
