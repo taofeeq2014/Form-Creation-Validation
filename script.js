@@ -55,6 +55,16 @@ const form = document.getElementById('registration-form');
     });
 
 //Feedback Display Logic:
+const form-feedback = document.getElementById('form-feedback');
+      const form-feedbackError = document.getElementById('form-feedback');
+      if (form-feedbackInput.value.length < 3) {
+        form-feedbackError.textContent = 'form-feedback must be at least 3 characters long.';
+        return; 
+    } 
+        else {
+        form-feedbackError.textContent = '';
+      }
+
 feedbackDiv  style.display to "block"
 If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" 
 style.color to "#28a745".
