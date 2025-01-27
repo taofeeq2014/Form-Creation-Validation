@@ -75,9 +75,8 @@ const form-feedback = document.getElementById('form-feedback');
       }
 const trim = document.getElementById('trim');
 const push = document.getElementById('push');
-
-'feedbackDiv'  style.display to "block"
-If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" 
-style.color to "#28a745".
-If isValid is false, join messages with <br> to form a single string, and assign this to the 
-  innerHTML of feedbackDiv. Set feedbackDiv.style.color to "#dc3545".
+feedbackDiv = ('feedbackDiv.innerHTML", "messages.join');
+color = ('feedbackDiv.style.color');
+("#dc3545");
+<br>
+  if ("Registration successful!", isValid is false');
