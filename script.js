@@ -30,10 +30,19 @@ const form = document.getElementById('registration-form');
         emailError.textContent = '';
       }
 
+      //OTHER EMAIL VALIDATE PATTERN
+      function valid(email) {
+    const input = document.createElement('input');
+    input.type = 'email';
+    input.value = email;
+    return input.checkValidity();
+}
+console.log(valid("example@domain.com") ? "Valid email" : "Invalid email");
+
       // Validate password
       const passwordInput = document.getElementById('password');
       const passwordError = document.getElementById('passwordError');
-      if (passwordInput.value.length < 6) {
+      if (passwordInput.value.length < 8) {
         passwordError.textContent = 'Password must be at least 6 characters long.';
         return;
       } else {
@@ -65,6 +74,7 @@ const form-feedback = document.getElementById('form-feedback');
         form-feedbackError.textContent = '';
       }
 const trim = document.getElementById('trim');
+const push = document.getElementById('push');
 
 'feedbackDiv'  style.display to "block"
 If isValid remains true, set the textContent of feedbackDiv to "Registration successful!" 
